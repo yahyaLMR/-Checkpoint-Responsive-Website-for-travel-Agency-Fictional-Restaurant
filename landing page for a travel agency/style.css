@@ -1,0 +1,54 @@
+footer {
+  background-color: rgb(38, 46, 46);
+  color: antiquewhite;
+  height: 17vh;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+nav ul {
+    justify-content: right;
+  margin-bottom: 0;
+}
+nav {
+  height: 15vh;
+  background-color: rgb(35, 129, 218);
+}
+.hero {
+  height: 70vh;
+  background-image: url(https://static01.nyt.com/images/2025/02/12/t-magazine/travel/12tmag-spring-break-slide-TO4B-copy/12tmag-spring-break-slide-TO4B-copy-facebookJumbo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+button:hover {
+  background-color: rgb(35, 129, 218);
+  color: white;
+  scale: 1.1;
+}
+.hero h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 12px 4px 4px black;
+}
+.hero h4 {
+  font-size: 45px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-shadow: 7px 7px 7px rgb(125, 171, 231);
+  background-color: rgb(31, 30, 28);
+  width: 90%;
+  border-radius: 40px;
+  padding:20px ;
+}
+section{
+  margin: 100px 0;
+} .form-group{
+  width: 40%;
+}
+#contact {
+  margin: 200px 0;
+}
