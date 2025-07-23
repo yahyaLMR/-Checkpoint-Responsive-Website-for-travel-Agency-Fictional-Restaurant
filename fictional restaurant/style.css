@@ -1,111 +1,136 @@
-#hero{
-    background-image: url(hero\ background.jpeg);
-    /* background-image: url(téléchargement.jpeg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-    background-position: 50%;
+#hero {
+  background-image: url(hero\ background.jpeg);
+  /* background-image: url(téléchargement.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  background-position: 50%;
 }
-body{
-    font-family: sans-serif;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+body {
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 2px;
 }
-p{
-    font-weight: 600;
-    width: 80%;
-    font-size: 20px;
+p {
+  font-weight: 600;
+  width: 80%;
+  font-size: 20px;
 }
-button:hover{
-    scale: 1.3;
+button:hover {
+  scale: 1.3;
 }
-nav ul li a{
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    
+nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
 }
-nav ul li:hover{
-    scale: 1.2;
+nav ul li:hover {
+  scale: 1.2;
 }
-nav ul li{
-    transition: 0.3s
+nav ul li {
+  transition: 0.3s;
 }
-#menu{
-    display: grid;
-    grid-template-columns:5% 1fr 5% ;
-    grid-template-rows:  minmax(350,auto) minmax(350,auto) minmax(350,auto);
-    gap: 40px;
+#menu {
+  display: grid;
+  grid-template-columns: 5% 1fr 5%;
+  grid-template-rows: minmax(350, auto) minmax(350, auto) minmax(350, auto);
+  gap: 40px;
 }
-#menu h1{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-    font-size: 50px;
-    margin-top: 40px;
+#menu h1 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 40px;
 }
-.plate{
-    grid-column-start: 2;
-    grid-column-end: 2;
-    display: grid;
-    grid-template-columns: 30% 60% 10%;
-    border-radius: 20px;
-    background-color: rgba(233, 233, 233, 0.418);
+.plate {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  display: grid;
+  grid-template-columns: 30% 60% 10%;
+  border-radius: 20px;
+  background-color: rgba(233, 233, 233, 0.418);
 }
-.plate .text{
-    padding: 30px;
+.plate .text {
+  padding: 30px;
 }
-.plate .text h2{
-    margin-bottom: 20px;
+.plate .text h2 {
+  margin-bottom: 20px;
 }
-.plate .price{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.plate .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.plate .price span{
-    font-size: 150%;
+.plate .price span {
+  font-size: 150%;
 }
-.about{
-    margin: 100px 0px;
-    display: grid;
-    grid-template-columns:50% 50% ;
-    grid-template-rows:400px ;
+.about {
+  margin: 100px 0px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 400px;
 }
-.about div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.about div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; 
-    margin: 100px 35px 100px 0px;  
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px 35px 100px 0px;
 }
-footer{
+/* footer{
     background-color: rgb(38, 46, 46);
     color: antiquewhite;
     height: 17VH;
+} */
+.about {
+  padding: 50px 0;
+  background-color: rgba(233, 233, 233, 0.418);
 }
-.about{
-    padding: 50PX 0;
-    background-color: rgba(233, 233, 233, 0.418);
+input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 0 5px;
+  height: 40px;
 }
-input{
-    width:100%;
-    border-radius: 10px;
-    padding: 0 5px;
-    height: 40px;
+label {
+  font-size: 17px;
 }
-label{
-    font-size: 17px;
+th {
+  padding: 7px 2px;
 }
-th{
-    padding: 7px 2px;
+footer a {
+  color: black;
+  transition: color 0.3s ease;
 }
+
+footer a:hover {
+  color: rgb(0, 0, 255);
+  text-decoration: none;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: rgb(28, 28, 238);
+  color: rgb(255, 255, 255) !important;
+}
+
 @media (max-width: 900px) {
   .about {
     grid-template-columns: 1fr;
@@ -170,7 +195,7 @@ th{
   .plate .price span {
     font-size: 120%;
   }
-  .text p{
+  .text p {
     font-size: 15px;
   }
 }

@@ -1,8 +1,8 @@
-footer {
+/* footer {
   background-color: rgb(38, 46, 46);
   color: antiquewhite;
   height: 17vh;
-}
+} */
 nav ul li a {
   text-decoration: none;
   color: white;
@@ -51,4 +51,29 @@ section{
 }
 #contact {
   margin: 200px 0;
+}
+footer a {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: rgb(0, 0, 255);
+  text-decoration: none;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: rgb(28, 28, 238);
+  color: rgb(255, 255, 255) !important;
 }
